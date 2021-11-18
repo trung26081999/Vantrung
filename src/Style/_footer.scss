@@ -1,0 +1,109 @@
+.Footer {
+  width: 100%;
+  background-color: #FDFEFD;
+  color: white;
+  background-image: linear-gradient(to bottom, rgba(134, 133, 133, 0.6) 0%,rgba(0, 0, 0, 0.6) 100%), url("../Assets/Login/gif.gif");
+  background-repeat: no-repeat;
+  
+  &__SignUpNews {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-top: 40px;
+    &--title {
+      flex-basis: 50%;
+      h2 {
+        color: white;
+        font-weight: 500;
+        font-size: 38px;
+        margin-bottom: 18px;
+      }
+      p {
+        font-weight: 300;
+        font-size: 16px;
+      }
+    }
+    &--form {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-basis: 50%;
+      .input--email {
+        padding: 13px;
+        width: 390px;
+      }
+      .btn--subscribe {
+        margin-left: 25px;
+        height: 50px;
+        width: 150px;
+        font-weight: 600;
+        border: none;
+        background-color: #FF6584;
+      }
+      .btn--subscribe:hover{
+        background-color: #fc6e8a;
+        border: 0.5px solid ;
+      }
+    }
+  }
+
+  &__information {
+    padding: 29px 0 36px 0;
+    display: flex;
+    gap: 0 78px;
+    justify-content: space-between;
+    border-bottom: 1px solid $gray;
+    .wrap__title {
+      margin-bottom: 60px;
+      
+    }
+    h2 {
+      color: white;
+      font-weight: 530;
+    }
+    li {
+      margin-bottom: 2em;
+      transition: all 0.2s ease-in;
+    }
+    li:hover {
+      cursor: pointer;
+      color: $gray;
+    }
+    &--address{
+      ul{
+        list-style-type: none;
+      }
+    }
+    &--about{
+      ul{
+        list-style-type: none;
+      }
+    }
+    &--founder{
+      width: 200px;
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    color: $gray;
+    &--socialNetwork {
+      font-size: 24px;
+      .iconFacebook {
+        margin-right: 12px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .iconInstagram:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

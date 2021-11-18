@@ -1,0 +1,237 @@
+.header {
+  width: 100%;
+  border-bottom: 1px solid #e8e8e8;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+
+  .tableVisible {
+    display: none;
+  }
+
+  .mobileVisible {
+    display: none;
+  }
+
+  // ----------------Responsive Ipad--------------------
+  @media only screen and (max-width: 768px) {
+    width: 768px;
+    background-color: $blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    .container__search {
+      input {
+        height: 28px;
+        width: 518px;
+        border-radius: 25px;
+        float: left;
+        margin-left: 15px;
+      }
+    }
+
+    .tableHidden {
+      display: none;
+    }
+
+    .tableVisible {
+      display: block;
+      width: fit-content;
+
+      .header__iconShortCut {
+        display: float;
+        float: left;
+        padding-left: 42px;
+      }
+    }
+
+    // ----------------Responsive Mobile--------------------
+    @media only screen and (max-width: 450px) {
+      width: 375px;
+      padding: 0 9px;
+
+      .container__search {
+        input {
+          height: 30px;
+          width: 227px;
+          border-radius: 25px;
+          margin-left: -16px;
+          margin-top: 2px;
+        }
+      }
+
+      .tableVisible {
+        display: block;
+        width: fit-content;
+
+        .anticon-unordered-list {
+          font-size: 26px !important;
+        }
+
+        .header__iconShortCut {
+          display: float;
+          float: left;
+          padding-left: 5px;
+          gap: 0 14px;
+        }
+      }
+    }
+  }
+
+  .wrap--heading {
+    height: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 30px;
+
+    .social {
+      img {
+        padding: 0 5px;
+      }
+
+    }
+  }
+
+  &__logo {
+    cursor: pointer;
+    width: 100px;
+
+    img {
+      width: 70%;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .tableVisible {
+      display: none;
+    }
+
+    .tableHidden {
+      display: block;
+    }
+
+    // ----------------Responsive Ipad--------------------
+    @media only screen and (max-width: 768px) {
+      .tableVisible {
+        display: block;
+        float: left;
+      }
+
+      .tableHidden {
+        display: none;
+      }
+    }
+
+    &--WrapItem {
+      display: flex;
+      justify-content: space-between;
+      gap: 0 60px;
+      font-weight: 600;
+      color: $gray;
+      list-style-type: none;
+      margin-top: 10px;
+
+      li:hover>a {
+        color: $blue;
+        padding-top: 22px;
+        border-top: 4px solid $blue;
+        transition: linear;
+      }
+
+      a {
+        font-size: 16px;
+        color: $gray-dark;
+      }
+    }
+  }
+
+  &__iconShortCut {
+    display: flex;
+    justify-content: center;
+    gap: 0 25px;
+    align-items: center;
+    position: relative;
+
+    .anticon-search {
+      font-size: 19px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .anticon-shopping-cart {
+      font-size: 32px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .ant-avatar-icon:hover {
+      cursor: pointer;
+    }
+
+    .btn--cancelFormSearch {
+      font-size: 25px;
+      color: $blue;
+      font-size: 25px;
+      font-weight: 400;
+      color: $blue;
+      transition: all 0.3s;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .container__search {
+    width: 1090px;
+    position: relative;
+    transition: all 0.5s ease-in;
+    opacity: 1;
+
+    &--input {
+      border: 0.5px solid rgb(187, 187, 187);
+      width: 100%;
+      padding: 15px 60px 15px 30px;
+      border-radius: 31px;
+    }
+
+    &--icon {
+      font-size: 19px;
+      position: absolute;
+      top: 50%;
+      right: 13px;
+      transform: translateY(-50%);
+      padding: 15px;
+      transition: all 0.3s;
+
+      &:hover {
+        cursor: pointer;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.dropdown {
+  a {
+    font-size: 16px;
+    color: $gray-dark;
+    font-weight: 600;
+  }
+  a:hover{
+    color: $blue;
+  }
+}

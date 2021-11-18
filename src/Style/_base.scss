@@ -1,0 +1,28 @@
+body {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 1;
+  color: $black;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1200px;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+
+.notfound{
+    width: 100%;
+    img{
+      margin: 5% 22%;
+      width: 50%;
+    }
+    h1{
+      margin: 0 30%;
+      color: rgb(245, 78, 78);
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 600;
+    }
+}

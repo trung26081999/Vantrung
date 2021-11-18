@@ -1,0 +1,24 @@
+.homestudent{
+  width: 100%;
+  height: 810px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(100%,#8be8cf));
+  .sidenav{
+    margin-top: 78px;
+    height: 732px;
+    background-color: rgba(0,0,0,0.46);
+    &__icon{
+      font-size: 1.85em; 
+      margin-top: 10px;
+    }
+  }
+}
+.hometeacher{
+  width: 1320px;
+  height: 650px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(235, 144, 144)), color-stop(100%,#f04949));
+}
+.headerWS{
+  width: 100%;
+  height: 76px;
+  border-bottom: 1px solid rgba(0,0,0,0.46);
+}
