@@ -1,0 +1,24 @@
+:root {
+  --mainBlue : #0e0eb8;
+  --lightBlue : #0fb0f0;
+  --mainWhite : #f5f5f5;
+  --mainDark : #333;
+  --mainYellow : #dd4;
+}
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+  background-color: var(--mainWhite) !important;
+  color : var(--mainDark) !important;
+}
+img.nav-bar-brand.mx-1 {
+  width: 100px;
+  height: 50px;
+}
+span.mr-1 {
+  color: red;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 20px;
+}
